@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script module defer src="script.js"></script>
+  </head>
+  <body>
+    <h2>Section 1 & Section 2</h2>
+    <div class="container">
+      <div class="select-box">
+        <div>
+          <input
+            type="radio"
+            id="cau1"
+            class="radio"
+            name="drone"
+            value="cau1"
+            checked
+          />
+          <label for="cau1">Câu 1</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="cau2"
+            class="radio"
+            name="drone"
+            value="cau2"
+          />
+          <label for="cau2">Câu 2</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="cau3"
+            class="radio"
+            name="drone"
+            value="cau3"
+          />
+          <label for="cau3">Câu 3</label>
+        </div>
+      </div>
+      <div class="questions-answer">
+        <div class="question-box">
+          <button class="question-number selected">Câu 1</button>
+          <button class="question-number">Câu 2</button>
+          <button class="question-number">Câu 3</button>
+        </div>
+        <div class="answers-box">
+          <div class="answer-box">
+            <p class="question">
+              Khi truy cập 1 trang web (VD:https://geekadventure.vn) trình duyệt
+              sẽ làm gì?
+            </p>
+            <p class="answer">
+              Trình duyệt sẽ truy cập đến DNS server và tìm địa chỉ thực của
+              server phía website. Tiếp theo, trình duyệt sẽ gửi Http request
+              cho server và yêu cầu server gửi lại một bản copy của website cho
+              phía client thông qua TCP/IP. Nếu như phía server chấp nhận
+              request từ client, server sẽ bắt đầu gửi những tập tin của website
+              cho phía trình duyệt dưới dạng một chuỗi những khối nhỏ được gọi
+              là gói dữ liệu. Trình duyệt sẽ tập hợp tất cả những khối dữ liệu
+              thành một trang web hoàn chỉnh và hiển thị nó cho người dùng.
+            </p>
+          </div>
+          <div class="answer-box hidden">
+            <p class="question">
+              Nếu có 2 CSS selectors cùng ứng với 1 element thì style cho
+              element sẽ thể hiện như thế nào?
+            </p>
+            <ul class="answer">
+              <li>
+                Style cho element sẽ thể hiện dưới sự kết hợp của cả 2 CSS
+                selectors.
+              </li>
+              <li>
+                Trong trường hợp có sự xung đột giữa các thuộc tính trong lúc
+                triển khai, việc thuộc tính của Selector nào được thể hiện vào
+                style sẽ căn cứ trên độ quan trọng. Độ quan trọng hay trong
+                tiếng Anh được gọi là Importance bao gồm 5 cấp độ từ lớn đến
+                nhỏ: User !important declarations; Author !important
+                declarations; Author declarations; User declarations và Default
+                browser declarations.
+              </li>
+              <li>
+                Nếu như cả 2 Selectors đều có cùng độ quan trọng thì sẽ xét đến
+                tính Specificity. Specificity bao gồm 4 cấp độ từ lớn đến nhỏ:
+                Inline Styles; IDs; Classes, pseudo-classes, attribute;
+                Elements, pseudo-elements.
+              </li>
+              <li>
+                Trường hợp cuối cùng nếu như cả 2 đều có cùng mức độ specificity
+                thì dòng khai báo cuối cùng trong code sẽ đè lên tất cả các dòng
+                khai báo khác và được triển khai hiển thị tới Users.
+              </li>
+            </ul>
+          </div>
+          <div class="answer-box hidden">
+            <p class="question">
+              Callback và Promise trong Javascript dùng để làm gì?
+            </p>
+            <ul class="answer">
+              <li>
+                Trong Javascript, Callback là một hàm sẽ được thực thi sau khi
+                một hàm khác kết thúc execution. Callback function thực sự rất
+                cần thiết đặc biệt trong quá trình Asynchronous. Thông thường,
+                Javascript sẽ được thực thi từ synchronous có nghĩa là đoạn code
+                ở sau chỉ được thực thi trong trường hợp đoạn code ở trước đã
+                hoàn thành. Vì vậy việc thực thi code asynchronous sẽ giải quyết
+                tình trạng ở một thời điểm nào đó, một dòng code phải mất nhiều
+                thời gian để hoàn thành nhưng những dòng code sau vẫn được triển
+                khai. Callback function thường xuyên được sử dụng trong quá
+                trình asynchronous nhằm mục đích triển khai các toán tử mà không
+                ảnh hưởng đến các dòng code phía sau.
+              </li>
+              <li>
+                Promise trong Javascript thường được dùng để fetch dữ liệu thông
+                qua API một cách asynchronous. Trong một vài trường hợp, sẽ mất
+                khá nhiều thời gian để có thể fetch dữ liệu từ phía server và
+                hiển thị lên trang web cho người dùng, việc sử dụng promise sẽ
+                giúp người dùng có thể tiếp tục xem các nội dung khác trong khi
+                đợi dữ liệu được fetch về.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Section 3</h2>
+    <div class="section3"></div>
+    <h2>Section 4</h2>
+    <div class="section4">
+      <p>
+        Sau khi đoạn code trong bài chạy xong thì students[0].score có giá trị
+        là 6.5 bằng với giá trị của newStudents[0].score. Vì khi khai báo biến
+        newStudents bằng với mảng students, biến newStudents sẽ trỏ tới địa chỉ
+        của mảng students. Vì vậy, sau khi newStudents bị thay đổi, giá trị tại
+        địa chỉ của mảng students cũng sẽ bị thay đổi theo
+      </p>
+      <p>
+        Độ phức tạp của thuật toán trên là tổng độ phức tạp của 2 hàm sort và
+        forEach: O(nlog(n)) + O(n);
+      </p>
+    </div>
+  </body>
+</html>
